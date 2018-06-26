@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!nvim/**
+!i3/**
+!i3blocks/**
+!/README.md
+
+# ...even if they are in subdirectories
+!*/
+

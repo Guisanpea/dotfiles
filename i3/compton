@@ -1,0 +1,9 @@
+backend = "glx";
+vsync = "opengl-swc";
+
+glx-no-stencil = true;
+paint-on-overlay = true;
+xrender-sync = true;
+xrender-sync-fence = true;
+
+opacity-rule = ["90:class_g = 'Termite'"];

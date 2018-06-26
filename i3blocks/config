@@ -1,0 +1,126 @@
+# man page at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+
+# Global properties
+
+command=~/.blocklets/$BLOCK_NAME
+separator_block_width=0
+separator=false
+markup=Pango
+
+[separator]
+color=#00BCD4
+markup=pango
+full_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
+short_text=<span font='18'>◥</span><span font='13'>████████████████████████████████████████████████████████████</span><span font='18'>◤</span>
+interval=500
+separator=false
+align=right
+separator_block_width=6
+
+[mediaplayer]
+command=~/.config/i3blocks/scripts/mediaplayer
+instance=spotify
+interval=5
+signal=10
+
+[VolIcon]
+full_text=<span font_desc='FontAwesome'> </span>
+color=#a1a1a1
+interval=once
+instance=
+markup=pango
+separator=false
+separator_block_width=2
+
+[volume]
+command=amixer get Master -c 0 - M | grep -oE "[[:digit:]]*%"
+interval=1
+separator=false
+separator_block_width=6
+signal=10
+
+[separator]
+color=#00BCD4
+markup=pango
+full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+interval=500
+separator=false
+separator_block_width=6
+
+#
+
+[memory]
+command=~/.config/i3blocks/scripts/memory
+label=MEM
+interval=30
+color=#c8e6c9
+
+[cpu_usage]
+command=~/.config/i3blocks/scripts/cpu_usage
+label=CPU
+interval=2
+min_width=CPU: 100.00%
+color=#90caf9
+
+[battery2]
+command=$HOME/.config/i3blocks/scripts/battery.py
+markup=pango
+interval=5
+
+[separator]
+color=#00BCD4
+markup=pango
+full_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+short_text=<span font='18'>◥</span><span font='13'>████</span><span font='18'>◤</span>
+interval=500
+separator=false
+separator_block_width=6
+
+[WirelessIcon]
+full_text=<span font_desc='FontAwesome'> </span>
+color=#a1a1a1
+interval=once
+markup=pango
+separator=false
+separator_block_width=2 
+
+[Wireless]
+command=[[ -z "$(iwgetid -r)" ]] || echo "$(iwgetid -r) "
+interval=10
+separator=false
+separator_block_width=6
+
+[TimeIcon]
+full_text=<span font_desc='FontAwesome'> </span>
+color=#a1a1a1
+markup=pango
+interval=once
+separator=false
+separator_block_width=2
+
+[time]
+markup=pango
+command=date '+%d/%m/%y  %H:%M:%S'    
+interval=1
+separator=false
+separator_block_width=6
+
