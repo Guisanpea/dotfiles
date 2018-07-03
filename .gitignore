@@ -6,6 +6,7 @@
 !nvim/**
 !i3/**
 !i3blocks/**
+!.zshrc
 !/README.md
 
 # ...even if they are in subdirectories

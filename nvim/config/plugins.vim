@@ -17,6 +17,8 @@ Plug 'ternjs/tern_for_vim', { 'do': 'yarn install' }
 
 " Theming
 Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'chriskempson/base16-vim'
 
 " Latex
 Plug 'vim-latex/vim-latex'
@@ -28,13 +30,19 @@ Plug 'w0rp/ale' " Asynchronous linting
 
 " Code
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Autocomplete
+Plug 'apalmer1377/factorus' " Refactoring
 
 " Initialize plugin system
 call plug#end()
 " Finished plug part
 
+
 " Plugins config
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#auto_complete_start_length = 1
+
+" Set shell to bash to fix nerdtree-git bug in fish
+set shell=bash
 

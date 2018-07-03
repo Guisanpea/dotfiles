@@ -1,5 +1,5 @@
 " Abbreviations
-cnoreabbrev NT NERDTree
-cnoreabbrev PI PlugInstall
-cnoreabbrev rf source %
+cabbrev NT NERDTree
+cabbrev PI PlugInstall
+cabbrev RF source %
 
