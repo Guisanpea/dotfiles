@@ -149,10 +149,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #Gaps
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 1
 hide_edge_borders both
-gaps outer 2
-gaps inner 5
+gaps outer 0
+gaps inner 10
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -167,7 +167,7 @@ exec /usr/bin/compton --config $HOME/.config/i3/compton
 # exec xinput set-prop 10 280 1
 
 # Start applications
-bindsym $mod+f exec /opt/firefox/firefox
+bindsym $mod+f exec firefox-developer-edition
 bindsym $mod+m exec thunderbird
 bindsym $mod+o exec opera
 bindsym $mod+n exec nautilus
@@ -199,10 +199,7 @@ client.urgent           #2f343a #560000 #ffffff #560000 #111111
 client.background #ffffff
 
 # Wallpaper
-# exec feh --bg-fill Pictures/Wallapers/WT203qx.jpg
-
-# Random Wallpaper
-exec ~/Programming/bash/randomwp.sh
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/arch-tux-1920x1080.jpg
 
 #Screenshots
 bindsym $mod+Print --release exec "gnome-screenshot -a"
@@ -214,19 +211,21 @@ bindsym Ctrl+Shift+Print exec "gnome-screenshot -i"
 exec --no-startup-id rescuetime
 
 #i3blocks
-bar {
-        status_command i3blocks
-        strip_workspace_numbers yes
-        position bottom
-        colors {
-                background #222222
-                                  #border #background #text
-                focused_workspace #484848 #00BCD4 #ffffff
-                active_workspace #484848 #484848 #aaaaaa
-                inactive_workspace #222222 #222222 #aaaaaa
-                urgent_workspace #222222 #840d0d #aaaaaa
-        }
-}
+#bar {
+ #       status_command i3blocks
+  #      strip_workspace_numbers yes
+   #     position bottom
+    #    font pango:hack, Icons 10
+     #   colors {
+      #          background #222222
+       #                           #border #background #text
+        #        focused_workspace #484848 #00BCD4 #ffffff
+         #       active_workspace #484848 #484848 #aaaaaa
+          #      inactive_workspace #222222 #222222 #aaaaaa
+           #     urgent_workspace #222222 #840d0d #aaaaaa
+        #}
+#}
+exec_always --no-startup-id ~/.config/i3/polybar.sh &
 
 #Lockscreen
 bindsym $mod+p exec i3lock-fancy -p

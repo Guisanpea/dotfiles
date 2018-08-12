@@ -16,4 +16,4 @@ set foldcolumn=1
 " let g:gruvbox_contrast_ligth = 'hard'
 
 set background=light
-colorscheme PaperColor
+colorscheme onehalflight

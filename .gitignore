@@ -8,6 +8,9 @@
 !i3blocks/**
 !zsh/**
 !/README.md
+!compton.conf
+!fish/**
+!polybar/**
 
 # ...even if they are in subdirectories
 !*/

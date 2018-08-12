@@ -19,6 +19,7 @@ Plug 'ternjs/tern_for_vim', { 'do': 'yarn install' }
 Plug 'morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'chriskempson/base16-vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 " Latex
 Plug 'vim-latex/vim-latex'
