@@ -164,7 +164,7 @@ gaps inner 10
 exec /usr/bin/compton --config $HOME/.config/i3/compton
 
 # Tap to click enabled
-# exec xinput set-prop 10 280 1
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 # Start applications
 bindsym $mod+f exec firefox-developer-edition
@@ -199,7 +199,7 @@ client.urgent           #2f343a #560000 #ffffff #560000 #111111
 client.background #ffffff
 
 # Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/arch-tux-1920x1080.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/arch-card-blue-demo-1920x1080.png
 
 #Screenshots
 bindsym $mod+Print --release exec "gnome-screenshot -a"
@@ -225,7 +225,9 @@ exec --no-startup-id rescuetime
            #     urgent_workspace #222222 #840d0d #aaaaaa
         #}
 #}
-exec_always --no-startup-id ~/.config/i3/polybar.sh &
+
+# Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Lockscreen
 bindsym $mod+p exec i3lock-fancy -p

@@ -6,4 +6,6 @@ Currently there are several dependencies which has to be met in order to use pro
 ### Plugins
 My preffered plugin manager is [vim-plug][] which can be installed easily, just look onto their repository.
 
+After the installation execute :PlugInstall but first do :checkhealth because some plugins depend on the python neovim library for example
+
 [vim-plug]: https://github.com/junegunn/vim-plug

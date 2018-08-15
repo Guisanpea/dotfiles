@@ -4,6 +4,8 @@
 
 When using zsh there are dependencies which has to be met. First, [oh-my-zsh][], and then external plugins, [zsh-autosuggestions][] and [zsh-syntax-highlighting][], and theme, [bullet-train][]
 
+Also you need to install a powerline compatible font
+
 When dependencies are installed source them in your own `.zshrc` and then source the config files on zsh folderº
 
 [oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh/
