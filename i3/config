@@ -42,10 +42,10 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+d exec rofi -show drun
 # change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+ñ focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -66,10 +66,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+Shift+h split h
+bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+Shift+v split v
+bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+shift+f fullscreen toggle
@@ -199,7 +199,10 @@ client.urgent           #2f343a #560000 #ffffff #560000 #111111
 client.background #ffffff
 
 # Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/arch-card-blue-demo-1920x1080.png
+exec --no-startup-id feh --bg-fill ~/Pictures/distroball-machine-demo-1920x1080.png
+
+# Pywal
+exec --no-startup-id wal -i ~/Pictures/distroball-machine-demo-1920x1080.png
 
 #Screenshots
 bindsym $mod+Print --release exec "gnome-screenshot -a"

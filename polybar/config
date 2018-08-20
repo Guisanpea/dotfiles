@@ -58,8 +58,8 @@ modules-left = i3
 modules-center = xwindow
 modules-right = xbacklight pulseaudio battery memory cpu wlan eth temperature date powermenu
 
-tray-position = none
-tray-padding = 2
+tray-position = right
+tray-padding = 
 # tray-transparent = true
 ;tray-background = #0063ff
 tray-detached = false
@@ -107,6 +107,8 @@ ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
 
 [module/xwindow]
 type = internal/xwindow

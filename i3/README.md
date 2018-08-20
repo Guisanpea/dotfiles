@@ -5,6 +5,8 @@ Rofi is my chosen application menu and you have to install or replace it
 
 To manage brightness I have chosen to use light https://github.com/haikarainen/light
 
+To have colorschemes on terminal with concordancy of my wallpaper I use pywal
+
 # Tweaks
 To have tap to click easyly execute xinput like this `xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1`
 
