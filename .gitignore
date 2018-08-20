@@ -11,6 +11,7 @@
 !compton.conf
 !fish/**
 !polybar/**
+!images/**
 
 # ...even if they are in subdirectories
 !*/
