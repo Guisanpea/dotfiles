@@ -21,8 +21,9 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'chriskempson/base16-vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
-" Latex
+" Latex and markdown
 Plug 'vim-latex/vim-latex'
+Plug 'suan/vim-instant-markdown'
 
 " Utilities
 Plug 'chrisbra/NrrwRgn' "Opens selection on a new windows/buffer
