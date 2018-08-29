@@ -69,7 +69,6 @@ plugins=(
   sudo
   systemd
   urltools
-  vi-mode
   web-search
   yarn
   wd
