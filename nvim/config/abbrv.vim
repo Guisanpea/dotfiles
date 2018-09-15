@@ -1,5 +1,5 @@
 " Abbreviations
 cabbrev NT NERDTree
 cabbrev PI PlugInstall
-cabbrev RF source %
+cabbrev RF source ~/.config/nvim/init.vim
 

@@ -187,4 +187,10 @@ map <leader>pp :setlocal paste!<cr>
 "Prettify JS
 autocmd FileType javascript set formatprg=prettier\ --stdin
 
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Stop using <C-w><C-w>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+map <C-w><C-w> :echon "You have to stop typing C-wC-w like a retard!!"<CR>

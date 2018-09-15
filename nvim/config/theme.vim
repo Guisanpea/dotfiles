@@ -15,7 +15,7 @@ set foldcolumn=1
 " set background=dark
 " let g:gruvbox_contrast_ligth = 'hard'
 
-set background=light
+" set background=light
 colorscheme onehalflight
 
 " Show white chars in lighter color than text  (I think that the group NonText is exclusive to neovim)

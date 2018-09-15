@@ -1,2 +1,12 @@
+# Font mode for powerlevel9k
+POWERLEVEL9K_MODE="nerdfont-complete"
+
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir ip vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+
+# OS segment
+POWERLEVEL9K_OS_ICON_BACKGROUND='black'
+POWERLEVEL9K_LINUX_ICON='%F{cyan} \uf303 %F{white} arch %F{cyan}linux%f'
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_COLOR_SCHEME='light'
+

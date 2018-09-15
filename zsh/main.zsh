@@ -4,7 +4,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
+ZSH_THEME=""
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -73,8 +73,6 @@ plugins=(
   yarn
   wd
   z
-  zsh-autosuggestion
-  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,8 +110,3 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Using pywal
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-(cat ~/.cache/wal/sequences &)
