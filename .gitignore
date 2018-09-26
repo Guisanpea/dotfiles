@@ -12,6 +12,7 @@
 !fish/**
 !polybar/**
 !images/**
+!trizen/**
 
 # ...even if they are in subdirectories
 !*/
