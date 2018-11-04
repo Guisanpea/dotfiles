@@ -92,6 +92,12 @@ autocmd VimEnter *
 
 nmap <F4> :TagbarToggle<CR>
 
+""""""""""""""""""
+"  Vim-Markdown  "
+""""""""""""""""""
+
+let g:vim_markdown_folding_disabled = 1
+
 """""""""""""""""""
 "  VIM-Closetags  "
 """""""""""""""""""
@@ -114,3 +120,4 @@ let g:closetag_emptyTags_caseSensitive = 1
 " Add > at current position without closing the current tag, default is ''
 "
 let g:closetag_close_shortcut = '<leader>>'
+

@@ -235,7 +235,7 @@ exec --no-startup-id rescuetime
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Lockscreen
-bindsym $mod+p exec i3lock-fancy -p
+bindsym $mod+p exec systemctl suspend
 
 # GNOME Settings Daemon
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
