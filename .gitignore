@@ -13,6 +13,7 @@
 !polybar/**
 !images/**
 !trizen/**
+!dunst/**
 
 # ...even if they are in subdirectories
 !*/

@@ -86,7 +86,7 @@ Plug 'lervag/vimtex'
 " Plug 'vim-latex/vim-latex'
 Plug 'suan/vim-instant-markdown'
 Plug 'godlygeek/tabular' " Needed for vim-markdown
-Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'
 
 " Initialize plugin system
 call plug#end()

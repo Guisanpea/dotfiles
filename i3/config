@@ -201,10 +201,10 @@ client.urgent           #2f343a #560000 #ffffff #560000 #111111
 client.background       #ffffff
 
 # Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/distroball-machine-demo-1920x1080.png
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/docker-card-1920x1080.png
 
 # Pywal
-exec --no-startup-id wal -l -i ~/Pictures/Wallpaper/distroball-machine-demo-1920x1080.png
+exec --no-startup-id wal -l -i ~/Pictures/Wallpaper/docker-card-1920x1080.png
 
 #Screenshots
 bindsym $mod+Print --release exec "gnome-screenshot -a"
@@ -236,6 +236,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Lockscreen
 bindsym $mod+p exec systemctl suspend
+bindsym $mod+Shift+p exec i3lock-fancy -p
 
 # GNOME Settings Daemon
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
