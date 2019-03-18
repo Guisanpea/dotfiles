@@ -98,6 +98,19 @@ nmap <F4> :TagbarToggle<CR>
 
 let g:vim_markdown_folding_disabled = 1
 
+""""""""""""
+"  vimtex  "
+""""""""""""
+
+let g:vimtex_compiler_method = 'arara'
+
+"""""""""""""
+"  Rainbow  "
+"""""""""""""
+
+let g:rainbow_active = 1
+
+
 """""""""""""""""""
 "  VIM-Closetags  "
 """""""""""""""""""
@@ -105,7 +118,7 @@ let g:vim_markdown_folding_disabled = 1
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
 "
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.php,*.js'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.php,*.js,*.vue'
 
 " filenames like *.xml, *.xhtml, ...
 " This will make the list of non-closing tags self-closing in the specified files.

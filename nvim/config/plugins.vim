@@ -32,8 +32,10 @@ Plug 'chrisbra/Colorizer' "Show colors in their color
 
 " Syntax
 Plug 'mboughaba/i3config.vim'
-Plug 'sheerun/vim-polyglot' "Indentation and syntax for many languages
+" Causes lag on .tex :/ Plug 'sheerun/vim-polyglot' "Indentation and syntax for many languages 
 Plug 'posva/vim-vue' " Self explaining
+Plug 'arteymix/vim-ocl'
+Plug 'luochen1990/rainbow' "Rainbow parentheses
 
 " System interaction
 Plug 'tpope/vim-eunuch' "Offers many system actions on vim
@@ -70,6 +72,12 @@ Plug 'honza/vim-snippets' "Snippets
 Plug 'Chiel92/vim-autoformat' "Auto file formatting
 Plug 'janko-m/vim-test' "Simple testing
 
+" Language Servers
+Plug 'natebosch/vim-lsc'
+
+" Scala
+Plug 'derekwyatt/vim-scala'
+
 " JavaScript
 Plug 'pangloss/vim-javascript'
 Plug 'ternjs/tern_for_vim', { 'do': 'yarn install' }
@@ -83,7 +91,6 @@ Plug 'adoy/vim-php-refactoring-toolbox'
 
 " Latex and markdown
 Plug 'lervag/vimtex'
-" Plug 'vim-latex/vim-latex'
 Plug 'suan/vim-instant-markdown'
 Plug 'godlygeek/tabular' " Needed for vim-markdown
 " Plug 'plasticboy/vim-markdown'

@@ -15,6 +15,7 @@ filetype indent on
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
+let maplocalleader = "."
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -88,8 +89,8 @@ set ffs=unix,dos,mac
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Change tab for two spaces
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 
 " Linebreak on 500 characters
@@ -126,7 +127,7 @@ map <c-space> ?
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between tabs
-map  <C-l> :tabn<CR>
+"map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
 map  <C-n> :tabnew<CR>
 
