@@ -40,7 +40,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+space exec rofi -show drun
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -83,7 +83,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Ctrl+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -193,18 +193,20 @@ bindsym $mod+o exec opera
 bindsym $mod+c exec chromium
 bindsym $mod+g exec steam-runtime
 bindsym $mod+n exec nautilus
+bindsym $mod+Shift+n exec $TERMCMD -e ranger
+bindsym $mod+u exec emacs
 bindsym $mod+Shift+d exec evince
 bindsym $mod+Shift+s exec spotify
 bindsym $mod+Shift+w exec /opt/webstorm/bin/webstorm.sh
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec light -A 5
-bindsym XF86MonBrightnessDown exec light -U 5
+#bindsym XF86MonBrightnessUp exec light -A 5
+#bindsym XF86MonBrightnessDown exec light -U 5
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -219,9 +221,6 @@ client.focused_inactive #333333 #5f676a #ffffff #484e50 #343943
 client.unfocused        #333333 #111111 #888888 #292d2e #111111
 client.urgent           #2f343a #560000 #ffffff #560000 #111111
 client.background       #ffffff
-
-# Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/docker-card-1920x1080.png
 
 # Pywal
 exec --no-startup-id wal -l -i ~/Pictures/Wallpaper/docker-card-1920x1080.png
@@ -266,9 +265,11 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 # GNOME power manager
 exec_always --no-startup-id gnome-power-manager
 
+# GNOME flashback
+exec --no-startup-id gnome-flashback
+
 # polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Swap Esc and Caps Lock
 exec --no-startup-id setxkbmap -option caps:swapescape
-

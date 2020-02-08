@@ -73,6 +73,7 @@ plugins=(
   yarn
   wd
   z
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh

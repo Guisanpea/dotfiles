@@ -5,7 +5,6 @@ Plug 'junegunn/vim-easy-align'
 
 " Git related
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/vim-github-dashboard'
 Plug 'airblade/vim-gitgutter'
 
 " File explorer
@@ -26,32 +25,30 @@ Plug 'dylanaraps/wal.vim' " Using pywal
 Plug 'junegunn/goyo.vim' " Distraction free mode
 Plug 'itchyny/lightline.vim' " Powerline
 Plug 'ryanoasis/vim-devicons' " Icons for files in NERDTree
+Plug 'sainnhe/vim-color-forest-night'
 
 " Style
 Plug 'chrisbra/Colorizer' "Show colors in their color
 
 " Syntax
-Plug 'mboughaba/i3config.vim'
-" Causes lag on .tex :/ Plug 'sheerun/vim-polyglot' "Indentation and syntax for many languages 
 Plug 'posva/vim-vue' " Self explaining
 Plug 'arteymix/vim-ocl'
 Plug 'luochen1990/rainbow' "Rainbow parentheses
+Plug 'HerringtonDarkholme/yats.vim' "Typescript
 
 " System interaction
 Plug 'tpope/vim-eunuch' "Offers many system actions on vim
 
 " Utilities
 Plug 'chrisbra/NrrwRgn' "Opens selection on a new windows/buffer
-Plug 'wesQ3/vim-windowswap' "Easy swap of windows
 Plug 'editorconfig/editorconfig-vim' "Define styles for each type
-Plug 'mhinz/vim-startify' "Fancy startup screen
+" Disabled because of unwanted right windows Plug 'mhinz/vim-startify' "Fancy startup screen
 Plug 'Yggdroot/indentLine' "Show lines with indentation
 Plug 'metakirby5/codi.vim' " Hackers scratchpad
 
 " Fast coding
 Plug 'jiangmiao/auto-pairs' "Automatic close of pairs ({[
 Plug 'alvan/vim-closetag' "Automatic tag close
-" Replaced by Ultisnips Plug 'aperezdc/vim-template' "Template for files
 Plug 'terryma/vim-multiple-cursors' "Self explaining
 Plug 'tpope/vim-surround' "Change surroundings like tags at same time
 Plug 'mattn/emmet-vim' "Fast tab extending for html-like
@@ -62,7 +59,6 @@ Plug 'junegunn/fzf.vim' " Fuzzy finder
 
 " Code
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Autocomplete
-Plug 'apalmer1377/factorus' " Refactoring
 Plug 'w0rp/ale' " Asynchronous linting
 Plug 'tpope/vim-commentary' "Simple comments
 Plug 'ludovicchabant/vim-gutentags' "Tags for files
@@ -74,6 +70,7 @@ Plug 'janko-m/vim-test' "Simple testing
 
 " Language Servers
 Plug 'natebosch/vim-lsc'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
 " Scala
 Plug 'derekwyatt/vim-scala'
@@ -89,11 +86,9 @@ Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
 Plug 'kristijanhusak/deoplete-phpactor'
 Plug 'adoy/vim-php-refactoring-toolbox'
 
-" Latex and markdown
-Plug 'lervag/vimtex'
-Plug 'suan/vim-instant-markdown'
-Plug 'godlygeek/tabular' " Needed for vim-markdown
-" Plug 'plasticboy/vim-markdown'
+" Elixir
+Plug 'elixir-editors/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 
 " Initialize plugin system
 call plug#end()

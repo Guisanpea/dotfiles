@@ -29,7 +29,6 @@ call deoplete#custom#option({
 """""""""""""""
 "  UltiSnips  "
 """""""""""""""
-
 let g:UltiSnipsEditSplit = 'horizontal'
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/config/plugins/UltiSnips/'
 let g:UltiSnipsExpandTrigger = '<c-s>'
@@ -37,15 +36,14 @@ let g:UltiSnipsExpandTrigger = '<c-s>'
 """""""""""
 "  A L E  "
 """""""""""
-
 let g:ale_sign_column_always = 1
-let g:ale_sign_error = ''
-let g:ale_sign_warning = ''
+let g:ale_sign_error = ''
+let g:ale_sign_warning = ''
+let g:ale_linters = {'scala': ['scalafmt']}
 
 """""""""""""""
 "  LightLine  "
 """""""""""""""
-
 let g:lightline = {
       \ 'colorscheme': 'PaperColor',
       \ 'active': {
@@ -62,54 +60,54 @@ set noshowmode
 """""""""""
 "  Emmet  "
 """""""""""
-
 "Change leader
 let g:user_emmet_leader_key='<C-y>'
 
 """"""""""""""""""
 "  EditorConfig  "
 """"""""""""""""""
-
 " Avoid using config on ssh and vim-fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 """"""""""""""
 "  Startify  "
 """"""""""""""
-
-let g:startify_fortune_use_unicode = 1
+" let g:startify_fortune_use_unicode = 1
 " Using NERDTree and Startify
-autocmd VimEnter *
-            \   if !argc()
-            \ |   Startify
-            \ |   NERDTree
-            \ |   wincmd w
-            \ | endif
+" autocmd VimEnter *
+"             \   if !argc()
+"             \ |   Startify
+"             \ |   NERDTree
+"             \ |   wincmd w
+"             \ | endif
+" let g:plug_window = 'tabnew'  " or maybe 'tabnew'
 
 """"""""""""
 "  Tagbar  "
 """"""""""""
-
 nmap <F4> :TagbarToggle<CR>
 
 """"""""""""""""""
 "  Vim-Markdown  "
 """"""""""""""""""
-
 let g:vim_markdown_folding_disabled = 1
 
 """"""""""""
 "  vimtex  "
 """"""""""""
-
 let g:vimtex_compiler_method = 'arara'
 
 """""""""""""
 "  Rainbow  "
 """""""""""""
-
 let g:rainbow_active = 1
 
+""""""""""""""""""""
+"  vim-autoformat  "
+""""""""""""""""""""
+noremap <F5> :Autoformat<CR>
+let g:formatdef_scalafmt = "'scalafmt --stdin'"
+let g:formatters_scala = ['scalafmt']
 
 """""""""""""""""""
 "  VIM-Closetags  "

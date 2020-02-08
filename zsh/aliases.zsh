@@ -1,5 +1,6 @@
 alias susp='systemctl suspend'
-alias xread='xcalib -red 1.7 1 64 -green 1.7 1 57 -blue 1.7 1 28 -alter'
+alias xread='xcalib -red 1.7 1 75 -green 1.7 1 62 -blue 1.7 1 35 -alter'
 alias xclear='xcalib -clear'
-alias footer='/home/archie/Programming/Scala/Email-footer/email-footer.scala "Santiago Sánchez Fernández" santiago-sánchez-fernández-357701159/ Guisanpea/'
+alias footer='amm ~/scripts/email-footer.sc "Santiago Sánchez Fernández" santiago-sanchez-fernandez guisanpea'
 alias noblack='xset s off; xset -dpms'
+alias pwc='pwgen 14 1 | xclip -sel clip'
