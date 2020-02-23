@@ -1,20 +1,24 @@
 # Ignore everything
 #
 *
+/composer/**
+/discord/**
 
 # But not these files...
-!.gitignore
-!nvim/**
-!i3/**
-!i3blocks/**
-!zsh/**
+!/.gitignore
+!/nvim/**
+!/i3/**
+!/i3blocks/**
+!/zsh/**
 !/README.md
-!compton.conf
-!fish/**
-!polybar/**
-!images/**
-!trizen/**
-!dunst/**
+!/compton.conf
+!/fish/**
+!/polybar/**
+!/images/**
+!/trizen/**
+!/dunst/**
+!/emacs/**
+!/spacemacs/**
 
 # ...even if they are in subdirectories
 !*/
