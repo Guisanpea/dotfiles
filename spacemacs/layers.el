@@ -38,14 +38,21 @@ values."
        git
        gtags
        helm
-       (html
+       (html :variables
          css-enable-lsp t
          web-fmt-tool 'prettier)
        javascript
+       (latex :variables
+         latex-build-command "LatexMk"
+         latex-enable-folding t
+         latex-enable-magic t)
        lsp
        markdown
        multiple-cursors
        org
+       (osx :variables osx-option-as 'meta
+            osx-right-option-as 'none)
+       pdf
        php
        prettier
        (ranger :variables
