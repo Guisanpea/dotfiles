@@ -14,6 +14,20 @@
             (push 'yas-installed-snippets-dir yas-snippet-dirs))
         ))
 
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+
+(add-hook 'LaTeX-mode-hook 'visual-line-mode)
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(setq reftex-plug-into-AUCTeX t)
+
+(setq-default TeX-engine 'xetex)
+(setq-default TeX-PDF-mode t)
+
 (load-file "~/.config/emacs/modes.el")
 
 (load-file "~/.config/emacs/font.el")
