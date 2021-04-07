@@ -11,9 +11,9 @@ set foldcolumn=1
 " => Theme settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gruvbox Specific
-" colo gruvbox
-" set background=dark
-" let g:gruvbox_contrast_ligth = 'hard'
+colo gruvbox
+set background=dark
+let g:gruvbox_contrast_ligth = 'hard'
 
 " set background=light
 
