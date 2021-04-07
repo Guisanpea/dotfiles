@@ -61,7 +61,6 @@ Plug 'junegunn/fzf.vim' " Fuzzy finder
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Autocomplete
 Plug 'w0rp/ale' " Asynchronous linting
 Plug 'tpope/vim-commentary' "Simple comments
-Plug 'ludovicchabant/vim-gutentags' "Tags for files
 Plug 'majutsushi/tagbar' " Tags browser
 Plug 'SirVer/ultisnips' " Snippets engine
 Plug 'honza/vim-snippets' "Snippets
