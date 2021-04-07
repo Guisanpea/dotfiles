@@ -15,17 +15,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
-""""""""""""""
-"  Deoplete  "
-""""""""""""""
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_complete_start_length = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-call deoplete#custom#option({
-            \ 'max_list' : 15,
-            \ })
-
 """""""""""""""
 "  UltiSnips  "
 """""""""""""""
