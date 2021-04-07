@@ -35,6 +35,7 @@ Plug 'posva/vim-vue' " Self explaining
 Plug 'arteymix/vim-ocl'
 Plug 'luochen1990/rainbow' "Rainbow parentheses
 Plug 'HerringtonDarkholme/yats.vim' "Typescript
+Plug 'LnL7/vim-nix' "Nix
 
 " System interaction
 Plug 'tpope/vim-eunuch' "Offers many system actions on vim
