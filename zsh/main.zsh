@@ -93,3 +93,5 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+bindkey -e
