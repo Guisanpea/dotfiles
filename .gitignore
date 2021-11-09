@@ -19,6 +19,7 @@
 !/dunst/**
 !/emacs/**
 !/spacemacs/**
+!.Xresources
 
 # ...even if they are in subdirectories
 !*/
