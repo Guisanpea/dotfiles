@@ -20,6 +20,8 @@
 !/emacs/**
 !/spacemacs/**
 !.Xresources
+!/sway/**
+!/waybar/**
 
 # ...even if they are in subdirectories
 !*/
