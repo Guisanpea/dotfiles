@@ -20,6 +20,7 @@
 !/emacs/**
 !/spacemacs/**
 !.Xresources
+!doom.d/**
 !/sway/**
 !/waybar/**
 

@@ -10,7 +10,7 @@
 		"format": "{icon}",
          	"format-icons": {
              		"1": "",
-             		"2": "",
+             		"2": "",
              		"3": "",
              		"4": "4",
              		"5": "5",
@@ -65,8 +65,8 @@
 	},
 	"network": {
         	"format-wifi": "  {essid}",
-        	"format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        	"format-linked": "{ifname} (No IP) ",
+        	"format-ethernet": " {ifname}: {ipaddr}/{cidr} ",
+        	"format-linked": " {ifname} (No IP)",
         	"format-disconnected": " Disconnected",
         	"format-alt": "{ifname}: {ipaddr}/{cidr}"
 	},
