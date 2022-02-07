@@ -57,6 +57,7 @@ plugins=(
   common-aliases
   docker
   gradle
+  kubectl
   node
   nyan
   pip
