@@ -18,7 +18,7 @@
 ;;   presentations or streaming.
 ;;
 (setq doom-font (font-spec :family "Iosevka Nerd Font" :size 16)
-      doom-variable-pitch-font (font-spec :family "FiraMono Nerd Font" :size 13)
+      doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font" :size 13)
       ivy-posframe-font (font-spec :family "Iosevka Nerd Font" :size 15))
 
 (setq shell-file-name "zsh")
